@@ -19,14 +19,14 @@ public class LoginStepDefinitions {
 	@Given("Admin User On Login Page")
 	public void admin_user_on_login_page() {
 	    Driver = new ChromeDriver();
-	    Driver.get("https://admin.staging.legalfulfillmentgroup.com/");
+	    Driver.get("");
 	    
 	}
 
 	@When("Admin User Inputs valid UserName and Password")
 	public void admin_user_inputs_valid_user_name_and_password() {
-	   Driver.findElement(By.id("email")).sendKeys("msspl-admin");
-	   Driver.findElement(By.id("password")).sendKeys("12345678");
+	   Driver.findElement(By.id("email")).sendKeys("");
+	   Driver.findElement(By.id("password")).sendKeys("");
 	}
 
 	@And("Admin User Click on LogIn Button")
